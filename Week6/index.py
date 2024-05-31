@@ -15,7 +15,8 @@ with open('./data/hr_system.txt', 'r') as file:
         anual_salary = float(p[3])
         paycheck = anual_salary/24
         if job_title == 'Engineer':
-            paycheck+=1000
+            paycheck+=2000
         format_paycheck = '{:.2f}'.format(paycheck)
         print(name, ' (ID: ', id,'), ', job_title, ' - $', format_paycheck, sep='')
+        print(f'{paycheck:.2f}')
         
